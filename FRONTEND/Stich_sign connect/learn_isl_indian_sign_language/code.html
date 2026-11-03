@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>SignConnect</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#283044", "secondary-fixed-dim": "#68dba9", "on-error": "#ffffff", "on-primary-container": "#a8b8ff", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#005137", "on-surface-variant": "#444653", "on-tertiary-container": "#9dc4b1", "inverse-primary": "#b8c4ff", "surface-container-high": "#e2e7ff", "surface": "#faf8ff", "on-primary-fixed": "#001453", "primary-fixed-dim": "#b8c4ff", "on-primary": "#ffffff", "outline": "#757684", "on-secondary-fixed": "#002114", "secondary-container": "#82f5c1", "tertiary-fixed-dim": "#a8cfbc", "primary": "#00288e", "error": "#ba1a1a", "tertiary": "#163b2d", "outline-variant": "#c4c5d5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#002115", "surface-bright": "#faf8ff", "on-tertiary": "#ffffff", "surface-tint": "#3755c3", "secondary": "#006c4a", "on-primary-fixed-variant": "#173bab", "inverse-on-surface": "#eef0ff", "on-tertiary-fixed-variant": "#294e3f", "surface-dim": "#d2d9f4", "secondary-fixed": "#85f8c4", "surface-variant": "#dae2fd", "primary-fixed": "#dde1ff", "on-secondary-container": "#00714e", "on-background": "#131b2e", "surface-container-highest": "#dae2fd", "tertiary-container": "#2e5243", "error-container": "#ffdad6", "on-error-container": "#93000a", "primary-container": "#1e40af", "tertiary-fixed": "#c3ecd7", "background": "#faf8ff", "surface-container": "#eaedff", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "margin": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem" }, fontFamily: { "body-md": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "label-lg": ["Inter"], "display-lg-mobile": ["Inter"], "title-md": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"] }, fontSize: { "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "display-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "fontWeight": "400" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="SignConnect Official Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UfQOyYT0W5NPTgPEY4EZFKjPBFZvS8MWtrPRaYELXcJoiYx3nkDfgGA0II5fRuCxlh8wVd91fw9WCEe8nVw5784op8mezlRsTe8zsBIVqDFOobUC4Gp12mnmE7xsSJlbqmw3u4TJ40jrM6qQPeLpflpvnqI8eidKrlj0lSfmMneyO0Wm874m9zZEJlcY0EjxgtPZUT936WAnMSY_LKRxyk-11kS63qsFuu81_FEC8Mlg"/><div class="flex flex-col"><span class="font-label-md text-label-md text-primary tracking-wide uppercase">SignConnect</span><h1 class="font-title-md text-title-md text-on-surface leading-tight">Learn</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Toggle High Contrast and Accessibility Options" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors focus:outline-none focus:ring-2 focus:ring-primary"><span class="material-symbols-outlined text-[24px]">accessibility_new</span></button><div class="flex items-center justify-center min-w-[48px] min-h-[48px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpXTnojNDDbryYyifm0d2rKqKhbZKFazKf_aUtAx7eSpwP4hveqTi4UtVFiUlaVwhU1nm9yjLT2vXBSt9jCZgd6S_aFO6iF30sTdFUxsac-bBGShbUE-Txtb2louJL3OBOTkxWFnojtWdwNQqMA4L_TkTOeyEan6TudsPONNASr_85aJYgeF3uxhij0_tPdq9fut5QClVKZ3wBtSSlgei4KfJTB2GkjesVGINUNwdO"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Warm Introduction & Learning Philosophy -->
+<section class="px-gutter-mobile pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-md text-label-md uppercase tracking-wide">Deaf Educator Approved</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Learn Indian Sign Language</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Practical, everyday ISL vocabulary developed with certified deaf educators. No pressure, no leaderboards—learn at your own comfortable pace.
+    </p>
+</section>
+<!-- Search & Instant Filter Bar -->
+<section class="px-gutter-mobile py-space-sm flex flex-col gap-space-sm">
+<div class="relative w-full flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline pointer-events-none text-[22px]">search</span>
+<input aria-label="Search ISL vocabulary, letters or phrases" class="w-full h-12 pl-11 pr-10 rounded-xl bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md shadow-sm focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="isl-vocab-search" placeholder="Search vocabulary, letters or phrases..." type="search"/>
+<button aria-label="Clear search input" class="hidden absolute right-space-sm p-2 text-outline hover:text-on-surface rounded-full transition-colors" id="clear-search-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Category Pills (Horizontal Scroll) -->
+<div aria-label="Vocabulary Topics" class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1 -mx-gutter-mobile px-gutter-mobile" role="tablist">
+<button aria-selected="true" class="category-tab whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg bg-primary text-on-primary shadow-sm transition-transform active:scale-95 flex items-center gap-1.5" data-category="all" role="tab">
+<span>All Modules</span>
+<span class="bg-primary-container text-on-primary-container px-1.5 py-0.2 rounded-full text-[10px]">4</span>
+</button>
+<button aria-selected="false" class="category-tab whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-transform active:scale-95" data-category="alphabet" role="tab">
+        ISL Alphabet (Two-Handed)
+      </button>
+<button aria-selected="false" class="category-tab whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-transform active:scale-95" data-category="greetings" role="tab">
+        Daily Greetings
+      </button>
+<button aria-selected="false" class="category-tab whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-transform active:scale-95" data-category="healthcare" role="tab">
+        Healthcare
+      </button>
+<button aria-selected="false" class="category-tab whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-transform active:scale-95" data-category="emergency" role="tab">
+        Emergency &amp; Safety
+      </button>
+<button aria-selected="false" class="category-tab whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-transform active:scale-95" data-category="family" role="tab">
+        Family &amp; Social
+      </button>
+</div>
+</section>
+<!-- Pedagogical Insight & Cultural Note (ISL vs ASL) -->
+<section class="px-gutter-mobile py-space-xs">
+<div class="p-space-md rounded-2xl bg-surface-container-high text-on-surface flex flex-col gap-space-xs relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+<span class="font-label-lg text-label-lg">ISL vs ASL Nuance</span>
+</div>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary">Cultural Note</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Unlike American Sign Language which relies heavily on single-hand shapes, <strong class="text-on-surface font-semibold">Indian Sign Language (ISL)</strong> embraces expressive two-handed fingerspelling and distinct regional grammars shaped across Indian states.
+      </p>
+</div>
+</section>
+<!-- Modular Learning Paths Grid -->
+<section class="px-gutter-mobile py-space-sm flex flex-col gap-space-md" id="cards-container">
+<!-- Card 1: Alphabet & Numbers -->
+<article class="module-card bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md" data-card-category="alphabet">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">sign_language</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">ISL Alphabet &amp; Numbers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Two-handed fingerspelling fundamentals</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md">26 Letters • 10 Digits</span>
+</div>
+<!-- Illustrated Practice Strip -->
+<div class="relative w-full h-36 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A bright warm educational photo demonstrating Indian Sign Language two-handed fingerspelling for letters A and B. Soft studio lighting with a calm neutral background, warm cream tones, clear hand positions with focus on precise finger contact and relaxed wrists in ISL posture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHWLLWt3V8V2dcisGcNhHLzcOwy3r6cL7CrNsfRCsDIdQ-XC6M9ahMv5I4V1t2ruXa0kCoTf6j612YLkjPIrXKQxUmLNdfJ3URPAHl96tXHPDED8oXKrF0FCux3O6R6DKnU_l722tGVx36g99NSnYyT6BBRCKSVozKxtgBuc9sA9KhiCUqCsLL3gJ59jVLURc7R3LBeyBqZ6hQmuQHizgbo-GKDerZviaxrl6L5ju3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-on-background/20 to-transparent flex items-end p-space-sm">
+<p class="text-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim">touch_app</span>
+            Both hands collaborate: Non-dominant hand serves as base easel.
+          </p>
+</div>
+</div>
+<!-- Quick Interactive Samples -->
+<div class="flex flex-wrap gap-space-xs">
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Left index fingertip touches base of right thumb." data-phrase="Letter A">
+<span>Letter "A"</span>
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Both hands form soft closed loops touching horizontally." data-phrase="Letter B">
+<span>Letter "B"</span>
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Five open fingers on right hand tapped gently forward." data-phrase="Number 5">
+<span>Numbers 1-10</span>
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+          Self-paced • No timers
+        </span>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all active:scale-95 flex items-center gap-1">
+<span>Open Module</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Daily Greetings & Etiquette -->
+<article class="module-card bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md" data-card-category="greetings">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">volunteer_activism</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Daily Greetings &amp; Social</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Polite conversations &amp; respectful gestures</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md">12 Phrases</span>
+</div>
+<div class="relative w-full h-36 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="An Indian deaf instructor warmly demonstrating the traditional Namaste sign and Good Morning sign in Indian Sign Language. Clear expressive facial expressions, peaceful natural lighting, high-contrast studio setting showcasing cultural authenticity and hand fluidity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs39iFT7IbHAxme6kk9dDEfwn7l_84iCYKfihGCMduasyHJR_51n4V_4q5TlW8O2Extx_MYavxHEzhY1JZApPVRWzHZ3Or2ifunl4goz6Dc42WpS6AS0JqsS4sOJ2Hhz2qbkpB6xg8EHbKymkrrgHpsbMM8eRqba275SVtFITbihz6ybv3yH0Z2wMlBBugjSIDQ-Li08pjDSQJ7sECOHNZwAYha269mKsc4mCw1V5s"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-on-background/20 to-transparent flex items-end p-space-sm">
+<p class="text-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim">face</span>
+            Facial expressions are essential grammar in ISL dialogues.
+          </p>
+</div>
+</div>
+<!-- Vocabulary Tags -->
+<div class="flex flex-wrap gap-space-xs">
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Both flat palms pressed gracefully at chest height with an appreciative slight nod." data-phrase="Namaste / Welcome">
+<span>Namaste</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Dominant hand opens upward like a rising sun, followed by morning gesture." data-phrase="Good Morning">
+<span>Good Morning</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Fingertips tap chin gently and drift forward toward the listener." data-phrase="Thank You">
+<span>Thank You</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Index fingers meet horizontally after soft chest sweep." data-phrase="Nice to Meet You">
+<span>Nice to Meet You</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+          5 mins overview
+        </span>
+<button class="px-4 py-2 rounded-xl bg-surface-container-high text-primary font-label-lg text-label-lg hover:bg-surface-container-highest transition-all active:scale-95 flex items-center gap-1">
+<span>Explore Greetings</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Healthcare & Symptoms -->
+<article class="module-card bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md" data-card-category="healthcare">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">medical_services</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Healthcare &amp; Symptoms</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Communicating in clinics and pharmacies</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md">18 Signs</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-1">
+<span class="font-label-md text-label-md text-primary uppercase">Clinic Core</span>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Doctor, Hospital, Nurse</p>
+<span class="font-label-md text-label-md text-on-surface-variant">Wrist pulse verification</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-1">
+<span class="font-label-md text-label-md text-error uppercase">Symptom Descriptors</span>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Pain / Hurt, Fever, Allergy</p>
+<span class="font-label-md text-label-md text-on-surface-variant">Twisting index indicators</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Index fingers rotate inward toward each other at affected body area." data-phrase="Pain / Hurt">
+<span>Pain / Hurt</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Right middle finger stirs in left palm cup, mimicking pestle preparation." data-phrase="Medicine">
+<span>Medicine</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Back of hand rests softly on forehead with slight discomfort expression." data-phrase="Fever / Heat">
+<span>Fever</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">visibility</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-tertiary">health_and_safety</span>
+          Validated with clinic staff
+        </span>
+<button class="px-4 py-2 rounded-xl bg-surface-container-high text-primary font-label-lg text-label-lg hover:bg-surface-container-highest transition-all active:scale-95 flex items-center gap-1">
+<span>Learn Healthcare</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Emergency & Safety -->
+<article class="module-card bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md" data-card-category="emergency">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">fmd_bad</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Emergency &amp; Assistance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Immediate high-priority visual signals</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-semibold">Priority</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[24px] mt-0.5">priority_high</span>
+<div class="flex flex-col">
+<span class="font-title-md text-body-md font-semibold text-on-surface">Instantly Recognized Emergency Signals</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Use broad, emphatic motions to ensure rapid comprehension even from distance or in low light.</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Closed right fist with thumb up placed on flat left palm, raised together upward." data-phrase="HELP">
+<span class="font-semibold text-error">HELP</span>
+<span class="material-symbols-outlined text-[16px] text-error">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Alternating flashing fist rotations above head mimicking siren beacon lights." data-phrase="Ambulance">
+<span>Ambulance</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Tapping shoulder emblem location twice with flat dominant fingers." data-phrase="Police">
+<span>Police</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="vocab-pill px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1" data-desc="Waving upward finger flutter simulating rising active flames." data-phrase="Fire / Danger">
+<span>Fire</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-error">offline_bolt</span>
+          Available offline
+        </span>
+<button class="px-4 py-2 rounded-xl bg-error-container text-on-error-container font-label-lg text-label-lg hover:opacity-90 transition-all active:scale-95 flex items-center gap-1 font-semibold">
+<span>Study Safety Signs</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Delightful Sandbox: Practice with Camera (Zero Judgement / No Pressure) -->
+<section class="px-gutter-mobile pt-space-xs pb-space-lg">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">videocam</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface">Practice with Camera</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">Private</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Private sandbox • No scorecards • On-device</p>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Test your hand shape accuracy in a safe space. Video runs strictly on your device; no video is ever stored or uploaded.
+      </p>
+<!-- Sandbox Interactive Simulator Container -->
+<div class="relative w-full aspect-video rounded-xl bg-surface-container-highest overflow-hidden flex flex-col items-center justify-center shadow-inner" id="camera-sandbox">
+<!-- Default State -->
+<div class="flex flex-col items-center text-center p-space-md gap-space-xs" id="sandbox-idle">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[30px]">self_improvement</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface">Ready to mirror signs?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+            Hold hands steady within the frame. We’ll show gentle alignment landmarks.
+          </p>
+<button class="mt-space-xs px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all active:scale-95 flex items-center gap-2" id="start-sandbox-btn">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+<span>Launch Mirror Sandbox</span>
+</button>
+</div>
+<!-- Simulated Active Viewport State (Hidden initially) -->
+<div class="hidden absolute inset-0 bg-inverse-surface flex flex-col justify-between p-space-md" id="sandbox-active">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+              Mirror Active • Hand Tracking On
+            </span>
+<button class="p-1 rounded-full bg-inverse-surface/80 text-inverse-on-surface hover:bg-inverse-surface" id="close-sandbox-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Subtle Hand Alignment Silhouette Guides -->
+<div class="flex items-center justify-center gap-12 opacity-80 pointer-events-none">
+<div class="w-24 h-28 rounded-2xl bg-secondary-fixed/20 flex flex-col items-center justify-center p-2 text-center text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[32px]">back_hand</span>
+<span class="text-[11px] font-label-md mt-1">Left Base Hand</span>
+</div>
+<div class="w-24 h-28 rounded-2xl bg-secondary-fixed/20 flex flex-col items-center justify-center p-2 text-center text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[32px] scale-x-[-1]">back_hand</span>
+<span class="text-[11px] font-label-md mt-1">Right Action Hand</span>
+</div>
+</div>
+<!-- Realtime Encouragement Banner -->
+<div class="p-2.5 rounded-xl bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">task_alt</span>
+<span class="font-label-lg text-label-lg">Good hand height &amp; posture!</span>
+</div>
+<span class="text-on-surface-variant font-label-md text-label-md">Practicing: "Namaste"</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Detail Bottom Sheet Modal for Vocabulary Preview -->
+<div aria-labelledby="modal-vocab-title" aria-modal="true" class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-end justify-center transition-opacity opacity-0" id="vocab-modal-backdrop" role="dialog">
+<div class="w-full max-w-lg bg-surface rounded-t-3xl p-space-lg flex flex-col gap-space-md shadow-2xl transform translate-y-full transition-transform duration-300" id="vocab-modal-sheet">
+<div class="w-12 h-1.5 rounded-full bg-outline-variant self-center"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-semibold">Sign Demonstration</span>
+<h4 class="font-headline-lg text-headline-lg text-on-surface mt-0.5" id="modal-vocab-title">Phrase Name</h4>
+</div>
+<button aria-label="Close detail modal" class="p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="close-modal-btn">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Demonstration Visual Preview -->
+<div class="w-full h-44 rounded-2xl bg-surface-container overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up photographic study of Indian Sign Language hand movement. Certified deaf signer showing relaxed wrist and clear finger positioning with instructional soft arrow guides over neutral institutional background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfQKRXKSqe5JwrvcjeCo6gcCTYbSWlphguvd1R_0rUSWlDidgx31K9fmITawRnXiDaQFQBShIspeOR2dony63KgvBomGecSsy2tN2JDSKvoBmI49chKUlqWrw6jLv4nQ22FoG5FSRNXoWvBDoem8KbUFTim0h-xO7_0Cxm4NHf9L4FV2u0dtvpbIEV_zJf8IT8AFaRoDt_GQQAqY-KeueV8huf6QF2NrmsEABoChLQ"/>
+<div class="absolute bottom-2 left-2 px-2.5 py-1 rounded-lg bg-inverse-surface/75 text-inverse-on-surface font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">speed</span>
+          Standard Normal Speed (0.8x ISL pace)
+        </div>
+</div>
+<!-- Description and Guidance -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">How to execute this sign:</span>
+<p class="font-body-md text-body-md text-on-surface-variant bg-surface-container-low p-space-sm rounded-xl" id="modal-vocab-desc">
+          Detailed step-by-step description will appear here.
+        </p>
+</div>
+<!-- Modal Actions -->
+<div class="flex items-center gap-space-sm pt-1">
+<button class="flex-1 h-12 rounded-xl bg-surface-container-high text-primary font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-1.5" id="repeat-sign-btn">
+<span class="material-symbols-outlined text-[20px]">replay</span>
+<span>Replay Slow (0.5x)</span>
+</button>
+<button class="flex-1 h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container shadow-sm transition-all active:scale-95 flex items-center justify-center gap-1.5" id="modal-try-camera-btn">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+<span>Practice Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    // Search Filter Logic
+    const searchInput = document.getElementById('isl-vocab-search');
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+    const cards = document.querySelectorAll('.module-card');
+    const categoryTabs = document.querySelectorAll('.category-tab');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function (e) {
+        const query = e.target.value.toLowerCase().trim();
+        if (query.length > 0) {
+          clearSearchBtn.classList.remove('hidden');
+        } else {
+          clearSearchBtn.classList.add('hidden');
+        }
+
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+
+      clearSearchBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        cards.forEach(card => card.classList.remove('hidden'));
+        searchInput.focus();
+      });
+    }
+
+    // Category Tabs Logic
+    categoryTabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        categoryTabs.forEach(t => {
+          t.setAttribute('aria-selected', 'false');
+          t.classList.remove('bg-primary', 'text-on-primary');
+          t.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        tab.setAttribute('aria-selected', 'true');
+        tab.classList.add('bg-primary', 'text-on-primary');
+        tab.classList.remove('bg-surface-container', 'text-on-surface');
+
+        const cat = tab.getAttribute('data-category');
+        cards.forEach(card => {
+          if (cat === 'all') {
+            card.classList.remove('hidden');
+          } else {
+            const cardCat = card.getAttribute('data-card-category');
+            if (cardCat === cat) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          }
+        });
+      });
+    });
+
+    // Sandbox Toggle Interaction
+    const startSandboxBtn = document.getElementById('start-sandbox-btn');
+    const closeSandboxBtn = document.getElementById('close-sandbox-btn');
+    const sandboxIdle = document.getElementById('sandbox-idle');
+    const sandboxActive = document.getElementById('sandbox-active');
+
+    if (startSandboxBtn && closeSandboxBtn && sandboxIdle && sandboxActive) {
+      startSandboxBtn.addEventListener('click', () => {
+        sandboxIdle.classList.add('hidden');
+        sandboxActive.classList.remove('hidden');
+      });
+
+      closeSandboxBtn.addEventListener('click', () => {
+        sandboxActive.classList.add('hidden');
+        sandboxIdle.classList.remove('hidden');
+      });
+    }
+
+    // Detail Modal Drawer for Vocabulary Pills
+    const modalBackdrop = document.getElementById('vocab-modal-backdrop');
+    const modalSheet = document.getElementById('vocab-modal-sheet');
+    const modalTitle = document.getElementById('modal-vocab-title');
+    const modalDesc = document.getElementById('modal-vocab-desc');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const vocabPills = document.querySelectorAll('.vocab-pill');
+    const modalTryCameraBtn = document.getElementById('modal-try-camera-btn');
+
+    function openModal(phrase, desc) {
+      modalTitle.textContent = phrase;
+      modalDesc.textContent = desc;
+      modalBackdrop.classList.remove('hidden');
+      modalBackdrop.classList.add('flex');
+      setTimeout(() => {
+        modalBackdrop.classList.remove('opacity-0');
+        modalSheet.classList.remove('translate-y-full');
+      }, 10);
+    }
+
+    function closeModal() {
+      modalBackdrop.classList.add('opacity-0');
+      modalSheet.classList.add('translate-y-full');
+      setTimeout(() => {
+        modalBackdrop.classList.remove('flex');
+        modalBackdrop.classList.add('hidden');
+      }, 300);
+    }
+
+    vocabPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const phrase = pill.getAttribute('data-phrase');
+        const desc = pill.getAttribute('data-desc');
+        openModal(phrase, desc);
+      });
+    });
+
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener('click', closeModal);
+    }
+
+    if (modalBackdrop) {
+      modalBackdrop.addEventListener('click', (e) => {
+        if (e.target === modalBackdrop) closeModal();
+      });
+    }
+
+    if (modalTryCameraBtn) {
+      modalTryCameraBtn.addEventListener('click', () => {
+        closeModal();
+        const cameraBox = document.getElementById('camera-sandbox');
+        if (cameraBox) {
+          cameraBox.scrollIntoView({ behavior: 'smooth' });
+          if (startSandboxBtn) startSandboxBtn.click();
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-stretch justify-around h-16 px-space-xs"><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md text-label-md mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="translate" href="#"><span class="material-symbols-outlined text-[24px]">videocam</span><span class="font-label-md text-label-md mt-0.5">Translate</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg text-primary font-bold" data-path="learn" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-md text-label-md mt-0.5">Learn</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 my-1 px-1 bg-error-container text-on-error-container rounded-xl active:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-error" data-path="emergency" href="#"><span class="material-symbols-outlined text-[22px]">emergency</span><span class="font-label-md text-label-md mt-0.5 font-bold">SOS</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="more" href="#"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-md text-label-md mt-0.5">More</span></a></div></nav></body></html>

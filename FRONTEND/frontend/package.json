@@ -1,0 +1,23 @@
+{
+  "name": "signconnect-frontend",
+  "version": "1.0.0",
+  "description": "SignConnect Indian Sign Language (ISL) Assistive Communication Platform - Modular Frontend Architecture",
+  "main": "index.html",
+  "scripts": {
+    "start": "python server.py",
+    "dev": "python server.py",
+    "preview": "python server.py"
+  },
+  "keywords": [
+    "sign-language",
+    "isl",
+    "accessibility",
+    "wcag-aaa",
+    "frontend-architecture",
+    "assistive-tech",
+    "mediapipe"
+  ],
+  "author": "SignConnect Team",
+  "license": "MIT"
+}
+

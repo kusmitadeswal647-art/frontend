@@ -1,0 +1,14 @@
+/* Page styles for Emergency Help & SOS */
+@keyframes strobe-flash {
+  0%, 100% { background-color: var(--color-error); }
+  50% { background-color: var(--color-surface); }
+}
+
+.beacon-flashing {
+  animation: strobe-flash 0.3s infinite;
+}
+
+#urgentFullscreenOverlay {
+  backdrop-filter: blur(8px);
+}
+

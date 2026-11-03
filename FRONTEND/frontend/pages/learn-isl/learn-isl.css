@@ -1,0 +1,14 @@
+/* Page styles for Learn Indian Sign Language */
+.category-tab {
+  transition: all 0.2s ease-in-out;
+}
+.vocab-pill {
+  transition: all 0.15s ease-in-out;
+}
+.vocab-pill:active {
+  transform: scale(0.96);
+}
+.module-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+

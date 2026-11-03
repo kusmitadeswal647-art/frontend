@@ -1,0 +1,8 @@
+/* Page-specific styles for SignConnect Home */
+.phrase-pill {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.phrase-pill:active {
+  transform: scale(0.97);
+}
+

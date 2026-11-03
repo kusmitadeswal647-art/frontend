@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>SignConnect</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#283044", "secondary-fixed-dim": "#68dba9", "on-error": "#ffffff", "on-primary-container": "#a8b8ff", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#005137", "on-surface-variant": "#444653", "on-tertiary-container": "#9dc4b1", "inverse-primary": "#b8c4ff", "surface-container-high": "#e2e7ff", "surface": "#faf8ff", "on-primary-fixed": "#001453", "primary-fixed-dim": "#b8c4ff", "on-primary": "#ffffff", "outline": "#757684", "on-secondary-fixed": "#002114", "secondary-container": "#82f5c1", "tertiary-fixed-dim": "#a8cfbc", "primary": "#00288e", "error": "#ba1a1a", "tertiary": "#163b2d", "outline-variant": "#c4c5d5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#002115", "surface-bright": "#faf8ff", "on-tertiary": "#ffffff", "surface-tint": "#3755c3", "secondary": "#006c4a", "on-primary-fixed-variant": "#173bab", "inverse-on-surface": "#eef0ff", "on-tertiary-fixed-variant": "#294e3f", "surface-dim": "#d2d9f4", "secondary-fixed": "#85f8c4", "surface-variant": "#dae2fd", "primary-fixed": "#dde1ff", "on-secondary-container": "#00714e", "on-background": "#131b2e", "surface-container-highest": "#dae2fd", "tertiary-container": "#2e5243", "error-container": "#ffdad6", "on-error-container": "#93000a", "primary-container": "#1e40af", "tertiary-fixed": "#c3ecd7", "background": "#faf8ff", "surface-container": "#eaedff", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "margin": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem" }, fontFamily: { "body-md": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "label-lg": ["Inter"], "display-lg-mobile": ["Inter"], "title-md": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"] }, fontSize: { "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "display-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "fontWeight": "400" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="SignConnect Official Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UfQOyYT0W5NPTgPEY4EZFKjPBFZvS8MWtrPRaYELXcJoiYx3nkDfgGA0II5fRuCxlh8wVd91fw9WCEe8nVw5784op8mezlRsTe8zsBIVqDFOobUC4Gp12mnmE7xsSJlbqmw3u4TJ40jrM6qQPeLpflpvnqI8eidKrlj0lSfmMneyO0Wm874m9zZEJlcY0EjxgtPZUT936WAnMSY_LKRxyk-11kS63qsFuu81_FEC8Mlg"/><div class="flex flex-col"><span class="font-label-md text-label-md text-primary tracking-wide uppercase">SignConnect</span><h1 class="font-title-md text-title-md text-on-surface leading-tight">More</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Toggle High Contrast and Accessibility Options" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors focus:outline-none focus:ring-2 focus:ring-primary"><span class="material-symbols-outlined text-[24px]">accessibility_new</span></button><div class="flex items-center justify-center min-w-[48px] min-h-[48px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpXTnojNDDbryYyifm0d2rKqKhbZKFazKf_aUtAx7eSpwP4hveqTi4UtVFiUlaVwhU1nm9yjLT2vXBSt9jCZgd6S_aFO6iF30sTdFUxsac-bBGShbUE-Txtb2louJL3OBOTkxWFnojtWdwNQqMA4L_TkTOeyEan6TudsPONNASr_85aJYgeF3uxhij0_tPdq9fut5QClVKZ3wBtSSlgei4KfJTB2GkjesVGINUNwdO"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Status & Assurance Banner -->
+<div class="px-gutter-mobile py-space-sm">
+<div class="bg-secondary-container text-on-secondary-container rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold">RPwD Act 2016 Compliant</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container opacity-90 mt-0.5">
+          WCAG 2.2 AAA Certified. Dignified, independent Indian Sign Language access with local zero-retention processing.
+        </p>
+</div>
+</div>
+</div>
+<!-- SECTION 1: ACCESSIBILITY PREFERENCES -->
+<section aria-labelledby="section-a11y-heading" class="px-gutter-mobile pt-space-sm pb-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="section-a11y-heading">Accessibility Controls</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Live visual and auditory adjustments</p>
+</div>
+</div>
+<button aria-label="Reset accessibility preferences to default" class="min-h-[48px] px-space-sm rounded-lg bg-surface-container text-primary font-label-lg text-label-lg flex items-center gap-1 active:bg-surface-container-highest transition-colors" id="reset-a11y-btn">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset</span>
+</button>
+</div>
+<!-- Live Interactive Preview Canvas Card -->
+<div aria-live="polite" class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-md transition-all duration-200" id="live-preview-box">
+<div class="flex items-center justify-between pb-space-xs mb-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Live Appearance Preview
+        </span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-full bg-surface-container text-primary" id="preview-badge">Standard • Default</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container transition-colors duration-200" id="preview-inner">
+<p class="font-title-md text-title-md text-on-surface font-semibold mb-1" id="preview-title">
+          नमस्ते • Welcome to SignConnect
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="preview-text">
+          Real-time ISL signs translate directly to text and speech. High visual clarity preserves subtle hand gestures.
+        </p>
+</div>
+</div>
+<div class="space-y-space-md">
+<!-- Font Scale Segmented Selector -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">format_size</span>
+            Text Size Scale
+          </label>
+<span class="font-label-md text-label-md text-primary font-bold" id="font-scale-readout">100% (Standard)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+          Scales all translation transcripts and menu labels across the application.
+        </p>
+<div aria-label="Font scale options" class="grid grid-cols-3 gap-space-xs bg-surface-container p-1 rounded-xl" role="radiogroup">
+<button aria-checked="true" class="font-scale-opt min-h-[48px] rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex flex-col items-center justify-center transition-all shadow-sm" data-scale="100" role="radio" type="button">
+<span class="font-bold">Standard</span>
+<span class="font-label-md text-label-md opacity-80">100%</span>
+</button>
+<button aria-checked="false" class="font-scale-opt min-h-[48px] rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex flex-col items-center justify-center transition-all hover:bg-surface-container-high" data-scale="120" role="radio" type="button">
+<span class="font-bold">Large</span>
+<span class="font-label-md text-label-md opacity-80">120%</span>
+</button>
+<button aria-checked="false" class="font-scale-opt min-h-[48px] rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex flex-col items-center justify-center transition-all hover:bg-surface-container-high" data-scale="150" role="radio" type="button">
+<span class="font-bold">XL Size</span>
+<span class="font-label-md text-label-md opacity-80">150%</span>
+</button>
+</div>
+</div>
+<!-- Visual Contrast Modes -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">contrast</span>
+          Visual Contrast Modes
+        </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+          Optimize readability for photophobia, low vision, or intense outdoor sunlight.
+        </p>
+<div aria-label="Visual contrast mode options" class="grid grid-cols-3 gap-space-xs" role="radiogroup">
+<!-- Default -->
+<button aria-checked="true" class="contrast-opt min-h-[56px] p-2 rounded-xl bg-surface-container-high text-on-surface flex flex-col items-center justify-center text-center shadow-sm" data-contrast="default" role="radio" type="button">
+<div class="w-6 h-6 rounded-full bg-surface-variant mb-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-primary">wb_sunny</span>
+</div>
+<span class="font-label-md text-label-md font-bold">Default</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Soft Tint</span>
+</button>
+<!-- High Contrast Black & Yellow -->
+<button aria-checked="false" class="contrast-opt min-h-[56px] p-2 rounded-xl bg-surface-container text-on-surface flex flex-col items-center justify-center text-center" data-contrast="black-yellow" role="radio" type="button">
+<div class="w-6 h-6 rounded-full bg-black mb-1 flex items-center justify-center">
+<span class="w-3 h-3 rounded-full bg-yellow-300"></span>
+</div>
+<span class="font-label-md text-label-md font-bold">High Viz</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Black/Yellow</span>
+</button>
+<!-- Dark OLED -->
+<button aria-checked="false" class="contrast-opt min-h-[56px] p-2 rounded-xl bg-surface-container text-on-surface flex flex-col items-center justify-center text-center" data-contrast="oled" role="radio" type="button">
+<div class="w-6 h-6 rounded-full bg-inverse-surface mb-1 flex items-center justify-center text-inverse-on-surface">
+<span class="material-symbols-outlined text-[16px]">dark_mode</span>
+</div>
+<span class="font-label-md text-label-md font-bold">OLED Dark</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Pure Pitch</span>
+</button>
+</div>
+</div>
+<!-- Motion & Transcripts Toggles -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Reduce Motion Toggle -->
+<label class="flex items-center justify-between p-space-md cursor-pointer hover:bg-surface-container-low transition-colors min-h-[64px]">
+<div class="flex items-start gap-space-sm pr-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">motion_photos_off</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Reduce Motion</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Enforces <code class="bg-surface-container px-1 rounded font-mono text-[11px]">prefers-reduced-motion</code>. Suppresses camera tracking zooms and UI ripples.
+              </span>
+</div>
+</div>
+<div class="relative shrink-0">
+<input class="sr-only peer" id="reduce-motion-toggle" type="checkbox"/>
+<div class="w-12 h-7 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:bg-primary transition-colors"></div>
+<div class="absolute left-1 top-1 bg-surface-container-lowest w-5 h-5 rounded-full transition-transform peer-checked:translate-x-5 shadow-sm"></div>
+</div>
+</label>
+<div class="h-px bg-surface-container mx-space-md"></div>
+<!-- Real-Time Captions & Haptics -->
+<label class="flex items-center justify-between p-space-md cursor-pointer hover:bg-surface-container-low transition-colors min-h-[64px]">
+<div class="flex items-start gap-space-sm pr-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">subtitles</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Always Subtitle &amp; Haptic Pulse</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Persistent bilingual real-time subtitles with tactile haptic vibration when gesture recognition locks.
+              </span>
+</div>
+</div>
+<div class="relative shrink-0">
+<input checked="" class="sr-only peer" id="captions-toggle" type="checkbox"/>
+<div class="w-12 h-7 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:bg-primary transition-colors"></div>
+<div class="absolute left-1 top-1 bg-surface-container-lowest w-5 h-5 rounded-full transition-transform peer-checked:translate-x-5 shadow-sm"></div>
+</div>
+</label>
+</div>
+<!-- Assistive Tech & Screen Reader Declaration Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">spatial_audio</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Screen Reader Engine Ready</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Full NVDA, TalkBack, and iOS VoiceOver compatibility. ARIA live polite regions announce decoded sign clauses sequentially without interrupting speech synthesizers.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: PRIVACY & DATA TRANSPARENCY -->
+<section aria-labelledby="section-privacy-heading" class="px-gutter-mobile pt-space-sm pb-space-md">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="section-privacy-heading">Data Transparency</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">On-device edge security &amp; zero tracking</p>
+</div>
+</div>
+<div class="space-y-space-sm">
+<!-- Camera Permission Transparency Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">videocam_off</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface">On-Demand Camera Session</h3>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">Auto-Sleep</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Your camera hardware is <strong>only accessed</strong> while the translator screen is active. Sensors instantly power off and unmount upon backgrounding or 90 seconds of inactivity.
+            </p>
+</div>
+</div>
+</div>
+<!-- No Video Recording Zero-Cloud Card -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-on-primary/10 text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">lock</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md font-bold text-on-primary">Strict Zero Video Recording</h3>
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">cloud_off</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary opacity-90 mt-1">
+              All visual video frames and 3D hand skeletal coordinates are computed directly inside your device RAM using WebGL &amp; WebAssembly. No video or biometric identifiers ever leave this phone.
+            </p>
+<div class="mt-space-sm pt-space-xs flex items-center gap-space-sm text-[12px] opacity-80">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">memory</span> In-Memory Wipe</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">phonelink_lock</span> Air-Gapped Safe</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Zero Account Obligation Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">no_accounts</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h3 class="font-title-md text-title-md text-on-surface">Zero Account Obligation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            SignConnect requires no sign-up, email, phone number, or Aadhaar linkage. You communicate with absolute anonymity and zero profiling.
+          </p>
+</div>
+</div>
+<!-- Offline Model Pack Card with Download Action -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">download_for_offline</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">Offline ISL Vocabulary Pack</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Full 48 MB local model for deep rural connectivity, medical wards, or remote rail transit.
+              </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm" id="offline-pack-container">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="model-status-text">Ready to Download</span>
+<span class="font-label-md text-label-md text-on-surface-variant">• 48 MB</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold" id="model-progress-percent">0%</span>
+</div>
+<!-- Progress Bar Track -->
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden mb-space-sm" id="model-progress-bar-wrap" role="progressbar">
+<div class="bg-primary h-full w-0 transition-all duration-300" id="model-progress-bar"></div>
+</div>
+<button class="w-full min-h-[48px] rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs active:bg-primary-container transition-colors shadow-sm" id="download-model-btn">
+<span class="material-symbols-outlined text-[20px]" id="download-btn-icon">arrow_downward</span>
+<span id="download-btn-label">Download Offline Pack (48MB)</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CONTACT ACCESSIBILITY TEAM -->
+<section aria-labelledby="section-support-heading" class="px-gutter-mobile pt-space-sm pb-space-lg">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="section-support-heading">Accessibility Assistance</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Deaf &amp; Hard of Hearing primary advocacy desk</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<!-- ISL Video Relay Service (VRS) Card -->
+<a class="block bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-colors active:scale-[0.99] text-left" href="#vrs-connect" id="isl-vrs-btn">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">interpreter_mode</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-on-surface">Live ISL Interpreter (VRS)</span>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">Free</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Connect immediately via two-way video relay with a certified ISL human interpreter for technical help or assistance.
+            </p>
+<div class="mt-space-sm flex items-center gap-1 text-secondary font-label-lg text-label-lg font-bold">
+<span>Start Video Relay Call</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</div>
+</div>
+</a>
+<!-- Plain Text Ticket Support -->
+<a class="block bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-colors active:scale-[0.99] text-left" href="#text-ticket" id="plain-ticket-btn">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">chat</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-on-surface">Plain Text Ticket Support</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Response &lt;2h</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Submit accessibility bug reports or dialect vocabulary requests with optional screenshot attachments.
+            </p>
+<div class="mt-space-sm flex items-center gap-1 text-primary font-label-lg text-label-lg font-bold">
+<span>Open Text Desk</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</div>
+</div>
+</a>
+</div>
+<!-- Institutional Footer Note -->
+<div class="mt-space-md text-center px-space-md">
+<p class="font-label-md text-label-md text-on-surface-variant">
+        SignConnect India • Governed under Rights of Persons with Disabilities Act, 2016 &amp; MeitY Digital Inclusivity Framework.
+      </p>
+</div>
+</section>
+<!-- Interactive JavaScript logic for Immediate Preview, Toggles & Offline Pack Simulation -->
+<script>
+    (function initPrivacyA11y() {
+      const previewBox = document.getElementById('preview-box');
+      const previewInner = document.getElementById('preview-inner');
+      const previewTitle = document.getElementById('preview-title');
+      const previewText = document.getElementById('preview-text');
+      const previewBadge = document.getElementById('preview-badge');
+      const fontScaleReadout = document.getElementById('font-scale-readout');
+
+      let currentScale = '100';
+      let currentContrast = 'default';
+
+      // Font Scale Buttons
+      const fontButtons = document.querySelectorAll('.font-scale-opt');
+      fontButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          fontButtons.forEach(b => {
+            b.setAttribute('aria-checked', 'false');
+            b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            b.classList.add('bg-surface-container', 'text-on-surface');
+          });
+          btn.setAttribute('aria-checked', 'true');
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
+
+          currentScale = btn.getAttribute('data-scale');
+          updatePreview();
+        });
+      });
+
+      // Contrast Buttons
+      const contrastButtons = document.querySelectorAll('.contrast-opt');
+      contrastButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          contrastButtons.forEach(b => {
+            b.setAttribute('aria-checked', 'false');
+            b.classList.remove('bg-surface-container-high', 'shadow-sm');
+            b.classList.add('bg-surface-container');
+          });
+          btn.setAttribute('aria-checked', 'true');
+          btn.classList.add('bg-surface-container-high', 'shadow-sm');
+          btn.classList.remove('bg-surface-container');
+
+          currentContrast = btn.getAttribute('data-contrast');
+          updatePreview();
+        });
+      });
+
+      function updatePreview() {
+        // Font Scale adjustment
+        if (currentScale === '100') {
+          previewTitle.style.fontSize = '1.125rem';
+          previewText.style.fontSize = '1rem';
+          previewText.style.lineHeight = '1.625rem';
+          fontScaleReadout.textContent = '100% (Standard)';
+        } else if (currentScale === '120') {
+          previewTitle.style.fontSize = '1.35rem';
+          previewText.style.fontSize = '1.2rem';
+          previewText.style.lineHeight = '1.85rem';
+          fontScaleReadout.textContent = '120% (Large)';
+        } else if (currentScale === '150') {
+          previewTitle.style.fontSize = '1.68rem';
+          previewText.style.fontSize = '1.5rem';
+          previewText.style.lineHeight = '2.2rem';
+          fontScaleReadout.textContent = '150% (Extra Large)';
+        }
+
+        // Contrast adjustment
+        if (currentContrast === 'default') {
+          previewInner.style.backgroundColor = '';
+          previewInner.style.color = '';
+          previewTitle.style.color = '';
+          previewText.style.color = '';
+          previewBadge.textContent = `${currentScale}% • Default`;
+          previewBadge.className = 'font-label-md text-label-md px-2 py-0.5 rounded-full bg-surface-container text-primary';
+        } else if (currentContrast === 'black-yellow') {
+          previewInner.style.backgroundColor = '#000000';
+          previewTitle.style.color = '#facc15';
+          previewText.style.color = '#fef08a';
+          previewBadge.textContent = `${currentScale}% • High Viz Yellow`;
+          previewBadge.className = 'font-label-md text-label-md px-2 py-0.5 rounded-full bg-black text-yellow-300 font-bold';
+        } else if (currentContrast === 'oled') {
+          previewInner.style.backgroundColor = '#05070e';
+          previewTitle.style.color = '#ffffff';
+          previewText.style.color = '#cbd5e1';
+          previewBadge.textContent = `${currentScale}% • OLED Pitch`;
+          previewBadge.className = 'font-label-md text-label-md px-2 py-0.5 rounded-full bg-inverse-surface text-inverse-on-surface font-bold';
+        }
+      }
+
+      // Reset Preferences
+      const resetBtn = document.getElementById('reset-a11y-btn');
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          // Reset font scale to 100
+          fontButtons[0].click();
+          // Reset contrast to default
+          contrastButtons[0].click();
+          // Reset toggles
+          const motionToggle = document.getElementById('reduce-motion-toggle');
+          if (motionToggle) motionToggle.checked = false;
+          const capToggle = document.getElementById('captions-toggle');
+          if (capToggle) capToggle.checked = true;
+        });
+      }
+
+      // Simulate Offline Pack Download
+      const downloadBtn = document.getElementById('download-model-btn');
+      const progressBar = document.getElementById('model-progress-bar');
+      const progressPercent = document.getElementById('model-progress-percent');
+      const statusText = document.getElementById('model-status-text');
+      const btnIcon = document.getElementById('download-btn-icon');
+      const btnLabel = document.getElementById('download-btn-label');
+      let downloading = false;
+
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', () => {
+          if (downloading) return;
+          downloading = true;
+          downloadBtn.disabled = true;
+          downloadBtn.classList.add('opacity-75');
+          btnIcon.textContent = 'sync';
+          btnIcon.classList.add('animate-spin');
+          btnLabel.textContent = 'Downloading ISL Model...';
+          statusText.textContent = 'Installing Pack (48MB)';
+
+          let progress = 0;
+          const interval = setInterval(() => {
+            progress += 10;
+            if (progress > 100) progress = 100;
+            progressBar.style.width = progress + '%';
+            progressPercent.textContent = progress + '%';
+
+            if (progress === 100) {
+              clearInterval(interval);
+              btnIcon.classList.remove('animate-spin');
+              btnIcon.textContent = 'check_circle';
+              btnLabel.textContent = 'Pack Installed & Offline Ready';
+              statusText.textContent = 'Installed (Offline Active)';
+              downloadBtn.classList.remove('bg-primary', 'opacity-75');
+              downloadBtn.classList.add('bg-secondary', 'text-on-secondary');
+            }
+          }, 200);
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-stretch justify-around h-16 px-space-xs"><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md text-label-md mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="translate" href="#"><span class="material-symbols-outlined text-[24px]">videocam</span><span class="font-label-md text-label-md mt-0.5">Translate</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="learn" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-md text-label-md mt-0.5">Learn</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 my-1 px-1 bg-error-container text-on-error-container rounded-xl active:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-error" data-path="emergency" href="#"><span class="material-symbols-outlined text-[22px]">emergency</span><span class="font-label-md text-label-md mt-0.5 font-bold">SOS</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg text-primary font-bold" data-path="more" href="#"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-md text-label-md mt-0.5">More</span></a></div></nav></body></html>

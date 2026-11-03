@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>SignConnect</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#283044", "secondary-fixed-dim": "#68dba9", "on-error": "#ffffff", "on-primary-container": "#a8b8ff", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#005137", "on-surface-variant": "#444653", "on-tertiary-container": "#9dc4b1", "inverse-primary": "#b8c4ff", "surface-container-high": "#e2e7ff", "surface": "#faf8ff", "on-primary-fixed": "#001453", "primary-fixed-dim": "#b8c4ff", "on-primary": "#ffffff", "outline": "#757684", "on-secondary-fixed": "#002114", "secondary-container": "#82f5c1", "tertiary-fixed-dim": "#a8cfbc", "primary": "#00288e", "error": "#ba1a1a", "tertiary": "#163b2d", "outline-variant": "#c4c5d5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#002115", "surface-bright": "#faf8ff", "on-tertiary": "#ffffff", "surface-tint": "#3755c3", "secondary": "#006c4a", "on-primary-fixed-variant": "#173bab", "inverse-on-surface": "#eef0ff", "on-tertiary-fixed-variant": "#294e3f", "surface-dim": "#d2d9f4", "secondary-fixed": "#85f8c4", "surface-variant": "#dae2fd", "primary-fixed": "#dde1ff", "on-secondary-container": "#00714e", "on-background": "#131b2e", "surface-container-highest": "#dae2fd", "tertiary-container": "#2e5243", "error-container": "#ffdad6", "on-error-container": "#93000a", "primary-container": "#1e40af", "tertiary-fixed": "#c3ecd7", "background": "#faf8ff", "surface-container": "#eaedff", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "margin": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem" }, fontFamily: { "body-md": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "label-lg": ["Inter"], "display-lg-mobile": ["Inter"], "title-md": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"] }, fontSize: { "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "display-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "fontWeight": "400" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="SignConnect Official Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UfQOyYT0W5NPTgPEY4EZFKjPBFZvS8MWtrPRaYELXcJoiYx3nkDfgGA0II5fRuCxlh8wVd91fw9WCEe8nVw5784op8mezlRsTe8zsBIVqDFOobUC4Gp12mnmE7xsSJlbqmw3u4TJ40jrM6qQPeLpflpvnqI8eidKrlj0lSfmMneyO0Wm874m9zZEJlcY0EjxgtPZUT936WAnMSY_LKRxyk-11kS63qsFuu81_FEC8Mlg"/><div class="flex flex-col"><span class="font-label-md text-label-md text-primary tracking-wide uppercase">SignConnect</span><h1 class="font-title-md text-title-md text-on-surface leading-tight">Emergency</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Toggle High Contrast and Accessibility Options" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors focus:outline-none focus:ring-2 focus:ring-primary"><span class="material-symbols-outlined text-[24px]">accessibility_new</span></button><div class="flex items-center justify-center min-w-[48px] min-h-[48px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpXTnojNDDbryYyifm0d2rKqKhbZKFazKf_aUtAx7eSpwP4hveqTi4UtVFiUlaVwhU1nm9yjLT2vXBSt9jCZgd6S_aFO6iF30sTdFUxsac-bBGShbUE-Txtb2louJL3OBOTkxWFnojtWdwNQqMA4L_TkTOeyEan6TudsPONNASr_85aJYgeF3uxhij0_tPdq9fut5QClVKZ3wBtSSlgei4KfJTB2GkjesVGINUNwdO"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Emergency Active Banner with Beacon Trigger -->
+<section class="px-gutter-mobile pt-space-sm pb-space-xs">
+<div class="bg-error-container text-on-error-container rounded-xl p-space-md shadow-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="relative flex h-3.5 w-3.5 shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-error"></span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md tracking-wider uppercase font-bold text-error">Emergency Mode Active</span>
+<span class="font-body-sm text-body-sm truncate text-on-error-container">Immediate responder communication</span>
+</div>
+</div>
+<button aria-label="Toggle Attention Beacon Flash" class="shrink-0 min-w-[48px] min-h-[48px] px-space-sm rounded-lg bg-error text-on-error font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" id="beaconBtn" onclick="toggleStrobeBeacon()">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">flashlight_on</span>
+<span>Beacon</span>
+</button>
+</div>
+</section>
+<!-- Auto-Speak Toggle Control -->
+<section class="px-gutter-mobile py-space-xs">
+<div class="bg-surface-container-high rounded-xl p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">volume_up</span>
+</div>
+<div class="flex flex-col">
+<label class="font-label-lg text-label-lg text-on-surface cursor-pointer" for="autoSpeakToggle">Auto-Speak Selected Message</label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Loud speech output for first responders</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer min-w-[48px] min-h-[48px] justify-center">
+<input checked="" class="sr-only peer" id="autoSpeakToggle" type="checkbox"/>
+<div class="w-12 h-7 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[12px] after:left-[6px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</section>
+<!-- High Priority Visual Warning / Sign Notice -->
+<section class="px-gutter-mobile py-space-xs">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">sign_language</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Zero Delay • Offline Ready</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Tap any urgent card to alert hearing responders</span>
+</div>
+</div>
+</section>
+<!-- Large Instant Touch Action Cards -->
+<section class="px-gutter-mobile py-space-sm flex flex-col gap-space-sm">
+<!-- Card 1: Critical Distress (Red) -->
+<div class="w-full min-h-[92px] p-space-md rounded-xl bg-error text-on-error shadow-md cursor-pointer active:scale-[0.98] transition-all flex items-center justify-between gap-space-md" onclick="triggerUrgentSOS('I NEED HELP! PLEASE ASSIST ME!', 'मुझे तत्काल मदद चाहिए! कृपया मेरी सहायता करें!')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-full bg-on-error text-error flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[34px]" style="font-variation-settings: 'FILL' 1;">e911_emergency</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md font-bold tracking-tight">I NEED HELP</span>
+<span class="font-title-md text-title-md opacity-95">मुझे मदद चाहिए</span>
+<span class="font-body-sm text-body-sm opacity-90 mt-0.5 truncate">Tap to trigger full screen siren &amp; voice broadcast</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[28px] shrink-0 opacity-80">arrow_forward</span>
+</div>
+<!-- Card 2: Medical / Doctor (Crimson) -->
+<div class="w-full rounded-xl bg-surface-container-lowest shadow-md p-space-md flex flex-col gap-space-sm">
+<div class="cursor-pointer flex items-center justify-between gap-space-md" onclick="triggerUrgentSOS('I NEED A DOCTOR IMMEDIATELY!', 'मुझे तुरंत डॉक्टर की ज़रूरत है!')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-xl bg-error-container text-on-error-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">medical_services</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">I NEED A DOCTOR</span>
+<span class="font-title-md text-title-md text-on-surface-variant">मुझे डॉक्टर की ज़रूरत है</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Medical emergency &amp; vitals summary</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[26px] text-on-surface-variant shrink-0">emergency</span>
+</div>
+<div class="pt-space-xs flex items-center gap-space-xs">
+<button class="flex-1 min-h-[48px] rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-1 active:bg-surface-container-high transition-colors" onclick="showQuickToast('Opening nearest government hospital locator...')">
+<span class="material-symbols-outlined text-[18px]">local_hospital</span>
+<span>Find Nearby Clinic</span>
+</button>
+<button class="flex-1 min-h-[48px] rounded-lg bg-surface-container text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 active:bg-surface-container-high transition-colors" onclick="triggerMedicalIDModal()">
+<span class="material-symbols-outlined text-[18px]">contact_emergency</span>
+<span>Medical ID Card</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Ambulance & Speed Dials (Orange / Secondary Alert) -->
+<div class="w-full rounded-xl bg-surface-container-lowest shadow-md p-space-md flex flex-col gap-space-sm">
+<div class="cursor-pointer flex items-center justify-between gap-space-md" onclick="triggerUrgentSOS('PLEASE CALL AN AMBULANCE NOW!', 'कृपया तुरंत एम्बुलेंस बुलाएं!')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">airport_shuttle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">CALL AN AMBULANCE</span>
+<span class="font-title-md text-title-md text-on-surface-variant">कृपया एम्बुलेंस बुलाएं</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Direct emergency speed dial to responders</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[26px] text-secondary shrink-0">phone_in_talk</span>
+</div>
+<div class="pt-space-xs grid grid-cols-2 gap-space-xs">
+<a class="min-h-[48px] rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:opacity-90" href="tel:108">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Dial 108 (Medical)</span>
+</a>
+<a class="min-h-[48px] rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:opacity-90" href="tel:112">
+<span class="material-symbols-outlined text-[20px]">sos</span>
+<span>Dial 112 (Universal)</span>
+</a>
+</div>
+</div>
+<!-- Card 4: Police SOS (Blue) -->
+<div class="w-full min-h-[88px] p-space-md rounded-xl bg-surface-container-lowest shadow-md cursor-pointer active:scale-[0.98] transition-all flex items-center justify-between gap-space-md" onclick="triggerUrgentSOS('I NEED THE POLICE IMMEDIATELY!', 'मुझे तुरंत पुलिस की ज़रूरत है!')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">local_police</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">I NEED THE POLICE</span>
+<span class="font-title-md text-title-md text-on-surface-variant">मुझे पुलिस की ज़रूरत है</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Show SOS card &amp; send instant GPS text to 112</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[26px] text-primary shrink-0">shield</span>
+</div>
+<!-- Card 5: Deaf / Hard of Hearing Awareness (Amber / High Dignity) -->
+<div class="w-full min-h-[92px] p-space-md rounded-xl bg-surface-container-high text-on-surface shadow-md cursor-pointer active:scale-[0.98] transition-all flex items-center justify-between gap-space-md" onclick="triggerUrgentSOS('I CANNOT HEAR YOU. PLEASE WRITE DOWN WHAT YOU WANT TO SAY ON THIS SCREEN.', 'मैं सुन नहीं सकता / सकती। कृपया इस स्क्रीन पर लिखकर या दिखाकर बात करें।')">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">hearing_disabled</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">I CANNOT HEAR YOU</span>
+<span class="font-title-md text-title-md text-on-surface-variant">मैं सुन नहीं सकता / सकती</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-1">"Please write what you want to say or show it on this phone."</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[28px] text-primary shrink-0">edit_note</span>
+</div>
+</section>
+<!-- Live Location & Rapid GPS Share -->
+<section class="px-gutter-mobile py-space-xs">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">my_location</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">GPS Location Pin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate" id="gpsAddressText">Connaught Place, Central Wing, New Delhi</span>
+</div>
+</div>
+<button class="min-w-[48px] min-h-[48px] px-space-md bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center gap-1 active:opacity-90 transition-opacity shrink-0" onclick="shareCurrentLocation()">
+<span class="material-symbols-outlined text-[18px]">share_location</span>
+<span>Share</span>
+</button>
+</div>
+</section>
+<!-- Custom Quick Emergency Text Input Section -->
+<section class="px-gutter-mobile pt-space-xs pb-space-lg flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-primary">keyboard</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Type Custom Urgent Message</h2>
+</div>
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Quick Text</span>
+</div>
+<div class="relative">
+<textarea class="w-full rounded-xl bg-surface-container-low text-on-surface p-space-sm font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-sm placeholder:text-outline resize-none" id="customEmergencyMsg" placeholder="Type specific urgent need for responder (e.g. My child is missing, I need insulin)..." rows="3"></textarea>
+</div>
+<!-- Quick Preset Chips -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Fast Tap Presets:</span>
+<div class="flex flex-wrap gap-1.5">
+<button class="min-h-[48px] px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" onclick="setCustomText('I am lost and cannot navigate without assistance. Please show directions.', 'मैं रास्ता भटक गया/गई हूँ। कृपया मार्ग दिखाएं।')">
+            📍 I am lost
+          </button>
+<button class="min-h-[48px] px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" onclick="setCustomText('I need an Indian Sign Language (ISL) certified interpreter.', 'मुझे भारतीय सांकेतिक भाषा (ISL) दुभाषिए की आवश्यकता है।')">
+            🤟 Need ISL Interpreter
+          </button>
+<button class="min-h-[48px] px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" onclick="setCustomText('I have Type 1 Diabetes and experiencing severe hypoglycemia. Need sugar.', 'मुझे टाइप 1 डायबिटीज़ है और शुगर कम हो गई है। मुझे तुरंत मीठा/शर्करा चाहिए।')">
+            🩸 I have Diabetes
+          </button>
+<button class="min-h-[48px] px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" onclick="setCustomText('Severe allergic reaction occurring. Please help administer EpiPen or reach ER.', 'गंभीर एलर्जी की समस्या हो रही है। कृपया आपातकालीन सहायता दें।')">
+            ⚠️ Allergic Reaction
+          </button>
+</div>
+</div>
+<!-- Full Brightness Display Trigger -->
+<div class="pt-space-xs flex flex-col gap-space-xs">
+<button class="w-full min-h-[52px] rounded-xl bg-primary text-on-primary font-headline-md text-headline-md flex items-center justify-center gap-space-sm shadow-md active:scale-[0.99] transition-transform" onclick="expandCustomDisplay()">
+<span class="material-symbols-outlined text-[24px]">fullscreen</span>
+<span>Expand to Full Brightness Card</span>
+</button>
+<span class="text-center font-body-sm text-body-sm text-on-surface-variant">Maximizes brightness &amp; turns phone into responder reader board</span>
+</div>
+</div>
+</section>
+<!-- Full-Screen High-Visibility Modal Display (Hidden by default) -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface text-inverse-on-surface flex-col justify-between p-gutter-mobile" id="urgentFullscreenOverlay">
+<div class="flex items-center justify-between pt-safe">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[28px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-error">Emergency Display Card</span>
+</div>
+<button aria-label="Close Fullscreen Emergency Card" class="min-w-[48px] min-h-[48px] rounded-full bg-surface-container-high text-on-surface flex items-center justify-center active:scale-95 shadow-md" onclick="closeUrgentModal()">
+<span class="material-symbols-outlined text-[28px]">close</span>
+</button>
+</div>
+<!-- Center Card with Massive Typography for First Responders -->
+<div class="flex-1 flex flex-col justify-center items-center text-center my-space-md p-space-md rounded-2xl bg-surface-container-lowest text-on-surface shadow-2xl">
+<span class="font-label-md text-label-md px-space-sm py-1 rounded-full bg-error-container text-on-error-container font-bold mb-space-sm">PLEASE READ CAREFULLY</span>
+<h3 class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface leading-tight mb-space-md" id="modalPrimaryText">I NEED HELP!</h3>
+<p class="font-headline-lg text-headline-lg font-bold text-primary leading-snug" id="modalSecondaryText">मुझे मदद चाहिए</p>
+<div class="mt-space-lg w-full p-space-sm rounded-xl bg-surface-container flex items-center justify-around gap-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+<span class="font-label-md text-label-md">Looping Speech</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">vibration</span>
+<span class="font-label-md text-label-md">Haptics Active</span>
+</div>
+</div>
+</div>
+<div class="pb-safe flex flex-col gap-space-xs">
+<button class="w-full min-h-[52px] rounded-xl bg-primary text-on-primary font-headline-md text-headline-md flex items-center justify-center gap-space-xs shadow-lg active:scale-98" onclick="speakCurrentModalText()">
+<span class="material-symbols-outlined text-[24px]">campaign</span>
+<span>Speak Again Aloud (ध्वनि पुनः चलाएं)</span>
+</button>
+<button class="w-full min-h-[48px] rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center" onclick="closeUrgentModal()">
+<span>Dismiss / Back to Emergency Hub</span>
+</button>
+</div>
+</div>
+<!-- Medical ID Quick Modal -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/80 flex items-center justify-center p-gutter-mobile" id="medicalIdModal">
+<div class="w-full max-w-sm rounded-2xl bg-surface-container-lowest text-on-surface p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[26px]">badge</span>
+<h3 class="font-headline-md text-headline-md font-bold">Personal Medical ID</h3>
+</div>
+<button class="min-w-[48px] min-h-[48px] rounded-full flex items-center justify-center text-on-surface-variant" onclick="closeMedicalIDModal()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm text-left">
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col">
+<span class="font-label-md text-label-md text-outline uppercase">Signer Name &amp; Profile</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Aarav Sharma (Deaf / ISL Primary)</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col">
+<span class="font-label-md text-label-md text-outline">Blood Type</span>
+<span class="font-title-md text-title-md font-bold text-error">B Positive (B+)</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col">
+<span class="font-label-md text-label-md text-outline">Known Allergies</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Penicillin</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col">
+<span class="font-label-md text-label-md text-outline">Emergency Contact (Guardian)</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Sunita Sharma (+91 98765 43210)</span>
+<a class="mt-1 inline-flex items-center gap-1 font-label-lg text-label-lg text-primary font-bold" href="tel:+919876543210">
+<span class="material-symbols-outlined text-[16px]">call</span> Tap to Call Guardian
+          </a>
+</div>
+</div>
+<button class="w-full min-h-[48px] rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center shadow-md" onclick="closeMedicalIDModal()">
+        Done
+      </button>
+</div>
+</div>
+<!-- Toast Message notification container -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 hidden bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-full shadow-lg font-body-sm text-body-sm flex items-center gap-2" id="sosToast">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">check_circle</span>
+<span id="sosToastText">Action recorded</span>
+</div>
+</div>
+<script>
+  let strobeInterval = null;
+  let isStrobing = false;
+
+  function toggleStrobeBeacon() {
+    const btn = document.getElementById('beaconBtn');
+    if (!isStrobing) {
+      isStrobing = true;
+      btn.classList.add('bg-on-error', 'text-error');
+      btn.classList.remove('bg-error', 'text-on-error');
+      
+      let flashState = false;
+      strobeInterval = setInterval(() => {
+        flashState = !flashState;
+        document.body.style.backgroundColor = flashState ? '#ba1a1a' : '#faf8ff';
+      }, 200);
+
+      showQuickToast('Beacon Flashing: Point screen outward');
+      triggerHaptics([100, 50, 100, 50]);
+    } else {
+      isStrobing = false;
+      clearInterval(strobeInterval);
+      document.body.style.backgroundColor = '';
+      btn.classList.remove('bg-on-error', 'text-error');
+      btn.classList.add('bg-error', 'text-on-error');
+      showQuickToast('Beacon turned off');
+    }
+  }
+
+  function triggerUrgentSOS(engText, hindiText) {
+    document.getElementById('modalPrimaryText').innerText = engText;
+    document.getElementById('modalSecondaryText').innerText = hindiText;
+    document.getElementById('urgentFullscreenOverlay').classList.remove('hidden');
+    document.getElementById('urgentFullscreenOverlay').classList.add('flex');
+
+    triggerHaptics([200, 100, 200, 100, 400]);
+
+    const autoSpeak = document.getElementById('autoSpeakToggle').checked;
+    if (autoSpeak) {
+      speakAloud(engText + '. ' + hindiText);
+    }
+  }
+
+  function setCustomText(engText, hindiText) {
+    const textarea = document.getElementById('customEmergencyMsg');
+    textarea.value = engText;
+    textarea.focus();
+    showQuickToast('Preset selected. Tap Expand when ready.');
+  }
+
+  function expandCustomDisplay() {
+    const textarea = document.getElementById('customEmergencyMsg');
+    const msg = textarea.value.trim();
+    if (!msg) {
+      showQuickToast('Please type or select an urgent message first.');
+      textarea.focus();
+      return;
+    }
+    triggerUrgentSOS(msg, 'कृपया यह संदेश तुरंत पढ़ें और सहायता करें');
+  }
+
+  function closeUrgentModal() {
+    document.getElementById('urgentFullscreenOverlay').classList.add('hidden');
+    document.getElementById('urgentFullscreenOverlay').classList.remove('flex');
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+  }
+
+  function speakCurrentModalText() {
+    const primary = document.getElementById('modalPrimaryText').innerText;
+    const secondary = document.getElementById('modalSecondaryText').innerText;
+    speakAloud(primary + '. ' + secondary);
+  }
+
+  function speakAloud(text) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.95;
+      utterance.pitch = 1.0;
+      utterance.volume = 1.0;
+      window.speechSynthesis.speak(utterance);
+    }
+  }
+
+  function triggerHaptics(pattern) {
+    if ('vibrate' in navigator) {
+      try {
+        navigator.vibrate(pattern);
+      } catch (e) {
+        // Safe failover
+      }
+    }
+  }
+
+  function shareCurrentLocation() {
+    const locationString = 'EMERGENCY SOS: My Current Location: Connaught Place, Central Wing, New Delhi (Lat: 28.6315, Lng: 77.2167). I am deaf and need immediate assistance.';
+    if (navigator.share) {
+      navigator.share({
+        title: 'Emergency SOS - SignConnect',
+        text: locationString,
+      }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(locationString);
+      showQuickToast('GPS Coordinates copied to clipboard!');
+    }
+  }
+
+  function triggerMedicalIDModal() {
+    document.getElementById('medicalIdModal').classList.remove('hidden');
+    document.getElementById('medicalIdModal').classList.add('flex');
+  }
+
+  function closeMedicalIDModal() {
+    document.getElementById('medicalIdModal').classList.add('hidden');
+    document.getElementById('medicalIdModal').classList.remove('flex');
+  }
+
+  function showQuickToast(msg) {
+    const toast = document.getElementById('sosToast');
+    const toastText = document.getElementById('sosToastText');
+    toastText.innerText = msg;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 2800);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-stretch justify-around h-16 px-space-xs"><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md text-label-md mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="translate" href="#"><span class="material-symbols-outlined text-[24px]">videocam</span><span class="font-label-md text-label-md mt-0.5">Translate</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="learn" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-md text-label-md mt-0.5">Learn</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 my-1 px-1 bg-error-container rounded-xl active:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-error text-primary font-bold" data-path="emergency" href="#"><span class="material-symbols-outlined text-[22px]">emergency</span><span class="font-label-md text-label-md mt-0.5 font-bold">SOS</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="more" href="#"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-md text-label-md mt-0.5">More</span></a></div></nav></body></html>

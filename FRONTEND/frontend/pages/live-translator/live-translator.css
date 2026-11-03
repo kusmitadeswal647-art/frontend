@@ -1,0 +1,9 @@
+/* Page styles for Live Camera Translator */
+#right-hand-mesh, #left-hand-mesh {
+  transition: opacity 0.3s ease;
+}
+
+.camera-scrim {
+  background: radial-gradient(circle at center, transparent 40%, rgba(19, 27, 46, 0.7) 100%);
+}
+

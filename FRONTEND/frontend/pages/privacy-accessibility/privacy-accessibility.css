@@ -1,0 +1,11 @@
+/* Page styles for Privacy & Accessibility Preferences */
+.font-scale-opt, .contrast-opt {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.font-scale-opt:active, .contrast-opt:active {
+  transform: scale(0.97);
+}
+#live-preview-box {
+  transition: all 0.3s ease;
+}
+

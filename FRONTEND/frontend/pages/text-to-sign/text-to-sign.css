@@ -1,0 +1,11 @@
+/* Page styles for Text to ISL Gestures */
+.preset-chip {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.preset-chip:active {
+  transform: scale(0.96);
+}
+#avatar-img {
+  filter: contrast(1.05) saturate(1.02);
+}
+

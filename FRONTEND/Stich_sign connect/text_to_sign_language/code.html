@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>SignConnect</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#283044", "secondary-fixed-dim": "#68dba9", "on-error": "#ffffff", "on-primary-container": "#a8b8ff", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#005137", "on-surface-variant": "#444653", "on-tertiary-container": "#9dc4b1", "inverse-primary": "#b8c4ff", "surface-container-high": "#e2e7ff", "surface": "#faf8ff", "on-primary-fixed": "#001453", "primary-fixed-dim": "#b8c4ff", "on-primary": "#ffffff", "outline": "#757684", "on-secondary-fixed": "#002114", "secondary-container": "#82f5c1", "tertiary-fixed-dim": "#a8cfbc", "primary": "#00288e", "error": "#ba1a1a", "tertiary": "#163b2d", "outline-variant": "#c4c5d5", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#002115", "surface-bright": "#faf8ff", "on-tertiary": "#ffffff", "surface-tint": "#3755c3", "secondary": "#006c4a", "on-primary-fixed-variant": "#173bab", "inverse-on-surface": "#eef0ff", "on-tertiary-fixed-variant": "#294e3f", "surface-dim": "#d2d9f4", "secondary-fixed": "#85f8c4", "surface-variant": "#dae2fd", "primary-fixed": "#dde1ff", "on-secondary-container": "#00714e", "on-background": "#131b2e", "surface-container-highest": "#dae2fd", "tertiary-container": "#2e5243", "error-container": "#ffdad6", "on-error-container": "#93000a", "primary-container": "#1e40af", "tertiary-fixed": "#c3ecd7", "background": "#faf8ff", "surface-container": "#eaedff", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "margin": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem" }, fontFamily: { "body-md": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "label-lg": ["Inter"], "display-lg-mobile": ["Inter"], "title-md": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"] }, fontSize: { "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "display-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "fontWeight": "400" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="SignConnect Official Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UfQOyYT0W5NPTgPEY4EZFKjPBFZvS8MWtrPRaYELXcJoiYx3nkDfgGA0II5fRuCxlh8wVd91fw9WCEe8nVw5784op8mezlRsTe8zsBIVqDFOobUC4Gp12mnmE7xsSJlbqmw3u4TJ40jrM6qQPeLpflpvnqI8eidKrlj0lSfmMneyO0Wm874m9zZEJlcY0EjxgtPZUT936WAnMSY_LKRxyk-11kS63qsFuu81_FEC8Mlg"/><div class="flex flex-col"><span class="font-label-md text-label-md text-primary tracking-wide uppercase">SignConnect</span><h1 class="font-title-md text-title-md text-on-surface leading-tight">Translate</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Toggle High Contrast and Accessibility Options" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors focus:outline-none focus:ring-2 focus:ring-primary"><span class="material-symbols-outlined text-[24px]">accessibility_new</span></button><div class="flex items-center justify-center min-w-[48px] min-h-[48px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpXTnojNDDbryYyifm0d2rKqKhbZKFazKf_aUtAx7eSpwP4hveqTi4UtVFiUlaVwhU1nm9yjLT2vXBSt9jCZgd6S_aFO6iF30sTdFUxsac-bBGShbUE-Txtb2louJL3OBOTkxWFnojtWdwNQqMA4L_TkTOeyEan6TudsPONNASr_85aJYgeF3uxhij0_tPdq9fut5QClVKZ3wBtSSlgei4KfJTB2GkjesVGINUNwdO"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full">
+<div class="px-gutter-mobile pt-space-md pb-space-lg flex flex-col gap-space-md">
+<!-- Mode Badge & Context Intro -->
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-secondary">Voice &amp; Text to ISL Engine</span>
+</div>
+<button aria-label="ISL Grammar Guide" class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors focus:outline-none" id="info-toggle" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>ISL Rules</span>
+</button>
+</div>
+<!-- INPUT CARD -->
+<section aria-labelledby="input-title" class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="input-title">Convert Words to ISL Signs</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instant translation into synthetic 3D spatial sign feed</p>
+</div>
+<!-- Language Selector Tabs -->
+<div aria-label="Input Language" class="inline-flex p-1 bg-surface-container rounded-lg self-start sm:self-auto" role="tablist">
+<button aria-selected="true" class="px-3 py-1.5 rounded font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all focus:outline-none" id="lang-en" role="tab">
+            English
+          </button>
+<button aria-selected="false" class="px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all focus:outline-none" id="lang-hi" role="tab">
+            हिन्दी (Hindi)
+          </button>
+</div>
+</div>
+<!-- Textarea with Integrated Voice Input -->
+<div class="relative flex flex-col bg-surface-container-low rounded-lg p-space-sm focus-within:bg-surface-container-lowest transition-colors shadow-inner">
+<label class="sr-only" for="phrase-input">Phrase to translate</label>
+<textarea class="w-full bg-transparent resize-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none" id="phrase-input" placeholder="Type a sentence or common greeting (e.g. 'Where is the pharmacy?')" rows="3">Where is the pharmacy?</textarea>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant" id="char-counter">22 / 120 chars</span>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Clear text input" class="min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/20 transition-colors" id="clear-btn" title="Clear text" type="button">
+<span class="material-symbols-outlined text-[20px]">backspace</span>
+</button>
+<button aria-label="Record voice to dictate phrase" class="min-w-[44px] min-h-[44px] px-2 flex items-center justify-center rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary active:scale-95 transition-all" id="voice-btn" type="button">
+<span class="material-symbols-outlined text-[22px]" id="mic-icon">mic</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Preset Chips -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">bolt</span> Quick Phrases:
+        </span>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar">
+<button class="preset-chip whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high active:bg-primary active:text-on-primary font-label-md text-label-md transition-colors" data-phrase="Namaste / Hello" type="button">
+            Namaste / Hello
+          </button>
+<button class="preset-chip whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high active:bg-primary active:text-on-primary font-label-md text-label-md transition-colors" data-phrase="Thank you" type="button">
+            Thank you
+          </button>
+<button class="preset-chip whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md transition-colors" data-phrase="Where is the pharmacy?" type="button">
+            Where is the pharmacy?
+          </button>
+<button class="preset-chip whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high active:bg-primary active:text-on-primary font-label-md text-label-md transition-colors" data-phrase="I need help" type="button">
+            I need help
+          </button>
+<button class="preset-chip whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high active:bg-primary active:text-on-primary font-label-md text-label-md transition-colors" data-phrase="Wait a minute" type="button">
+            Wait a minute
+          </button>
+</div>
+</div>
+<!-- Submit Action Button -->
+<button class="w-full min-h-[48px] px-space-md py-3 bg-primary text-on-primary font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-space-sm shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" id="translate-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">translate</span>
+<span>Translate to ISL</span>
+</button>
+</section>
+<!-- ISL SIGN DEMONSTRATION PLAYER -->
+<section aria-labelledby="player-title" class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-3 h-3 rounded-full bg-secondary animate-pulse"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="player-title">ISL Sign Demonstration</h2>
+</div>
+<span class="font-label-md text-label-md px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container" id="rendering-state">
+          Spatial Avatar Active
+        </span>
+</div>
+<!-- Player Frame Viewport -->
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-inverse-surface shadow-inner flex flex-col justify-between">
+<!-- Synthetic Signer Image (Placeholder Pipeline) -->
+<img alt="ISL Sign demonstration avatar" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300" data-alt="A clean institutional visual demonstration of an Indian Sign Language ISL avatar. A calm gender-neutral signer positioned in neutral studio lighting against a minimal slate-blue background, precisely performing two-handed spatial gestures with high contrast fingers and expressive facial features." id="avatar-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpYXWjqtFyTmmAkDeMZZhQu1VCB_zWwFST6KJk_YPKxPRF-rLPmeWxuKxet3W8NghSHzYw8YzgHipuc4fnRSySbJvp_d_P0HtdH1y1TzcRt9UVs7_oUGRFRXH-MaM2JDRxPKmA50N4j-T6D5MFy5Pm95ANClgJ1h0O_gVEj-JZEqvGod3EZCSh3O-6U5kL-_v7Av9MSwvblWMYmo54BRSRCw5OBm3J5l9wFfzIu8za"/>
+<!-- Top Camera Framing Guides Overlay -->
+<div class="relative z-10 p-space-sm flex items-center justify-between pointer-events-none">
+<div class="px-2 py-1 rounded bg-inverse-surface/80 backdrop-blur-sm text-surface-bright font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">view_in_ar</span>
+<span id="angle-indicator">Front View (0°)</span>
+</div>
+<div class="px-2 py-1 rounded bg-inverse-surface/80 backdrop-blur-sm text-surface-bright font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">speed</span>
+<span id="speed-indicator">1.0x Normal</span>
+</div>
+</div>
+<!-- Center Interactive Ripple Indicator on Tap -->
+<div class="relative z-10 self-center my-auto px-3 py-1.5 rounded-full bg-inverse-surface/75 text-inverse-on-surface font-label-md text-label-md flex items-center gap-1.5 opacity-90 transition-opacity" id="hand-indicator">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">pan_tool</span>
+<span>Signing: [PHARMACY]</span>
+</div>
+<!-- Player Controls Overlay (Bottom) -->
+<div class="relative z-10 p-space-sm bg-gradient-to-t from-inverse-surface via-inverse-surface/90 to-transparent flex flex-col gap-2">
+<!-- Progress bar -->
+<div class="w-full bg-surface-variant/40 h-1.5 rounded-full overflow-hidden cursor-pointer" id="progress-container">
+<div class="bg-secondary-fixed h-full w-2/3 transition-all duration-150" id="progress-bar"></div>
+</div>
+<div class="flex items-center justify-between gap-1">
+<!-- Transport Controls -->
+<div class="flex items-center gap-1">
+<button aria-label="Pause animation" class="min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg bg-surface-container-lowest text-primary hover:bg-primary-fixed transition-colors" id="play-pause-btn" type="button">
+<span class="material-symbols-outlined text-[22px]" id="play-icon">pause</span>
+</button>
+<button aria-label="Replay phrase loop" class="min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg bg-inverse-surface text-surface-bright hover:bg-surface-variant/30 transition-colors" id="replay-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">replay</span>
+</button>
+</div>
+<!-- Playback Speed Controls -->
+<div aria-label="Playback speed" class="flex items-center bg-inverse-surface/90 rounded-lg p-0.5" role="group">
+<button class="speed-btn px-2 py-1 rounded font-label-md text-label-md text-surface-variant hover:text-surface-bright focus:outline-none transition-colors" data-speed="0.5" type="button">0.5x</button>
+<button class="speed-btn px-2 py-1 rounded font-label-md text-label-md text-surface-variant hover:text-surface-bright focus:outline-none transition-colors" data-speed="0.75" type="button">0.75x</button>
+<button class="speed-btn px-2 py-1 rounded font-label-md text-label-md bg-primary-container text-on-primary font-bold focus:outline-none transition-colors" data-speed="1.0" type="button">1.0x</button>
+</div>
+<!-- View Angle Toggle -->
+<div aria-label="3D View Angle" class="flex items-center bg-inverse-surface/90 rounded-lg p-0.5" role="group">
+<button class="px-2 py-1 rounded font-label-md text-label-md bg-secondary text-on-secondary transition-colors focus:outline-none" id="angle-front" title="Frontal signing view" type="button">
+                Front
+              </button>
+<button class="px-2 py-1 rounded font-label-md text-label-md text-surface-variant hover:text-surface-bright transition-colors focus:outline-none" id="angle-side" title="Side 45 degree depth view for handshape clarity" type="button">
+                45° Side
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sign Grammar Breakdown Chips -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">account_tree</span>
+<span>Grammar breakdown (Topic-Comment order):</span>
+</span>
+<span class="font-label-md text-label-md text-on-surface-variant">3 morphemes</span>
+</div>
+<div class="flex items-center flex-wrap gap-space-xs pt-1">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">medication</span>
+<span>[PHARMACY / दवाखाना]</span>
+</div>
+<span class="text-on-surface-variant font-label-md text-label-md">+</span>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>[WHERE / कहाँ]</span>
+</div>
+<span class="text-on-surface-variant font-label-md text-label-md">+</span>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">help</span>
+<span>[QUESTION MARK / भौंहें ऊपर]</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SIGN METADATA & ACCURACY DISCLOSURE -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Linguistic Disclosure</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            ISL relies heavily on non-manual markers (facial expressions, head tilt) and two-handed spatial movement. This synthetic visualization reflects standard Indian Sign Language vocabulary codified by the ISLRTC (Indian Sign Language Research and Training Centre).
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<span class="font-label-md text-label-md">Standard: ISLRTC v2.4</span>
+<button class="text-primary font-label-md text-label-md hover:underline flex items-center gap-0.5" type="button">
+<span>Read Research Validation</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- UNSUPPORTED PHRASE & FINGERSPELLING HANDLER -->
+<div class="bg-error-container text-on-error-container rounded-xl p-space-md flex flex-col gap-space-xs transition-all" id="unsupported-banner">
+<div class="flex items-center gap-space-xs font-title-md text-title-md">
+<span class="material-symbols-outlined text-[22px] text-error">warning</span>
+<span>Fingerspelling Fallback Active</span>
+</div>
+<p class="font-body-sm text-body-sm">
+        Rare or loan words such as <span class="font-bold underline">"Supercalifragilistic"</span> have no direct single-sign ISL vocabulary. The system automatically segments into standard two-handed Indian fingerspelling letter-by-letter.
+      </p>
+<!-- Interactive Letter Sequence Demo Preview -->
+<div class="mt-space-xs p-space-xs bg-surface-container-lowest/80 rounded-lg flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md text-on-surface-variant">Fingerspelled sequence:</span>
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-bold">S</span>
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-bold">U</span>
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-bold">P</span>
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-bold">E</span>
+<span class="px-1.5 py-0.5 bg-surface-container rounded font-bold">R</span>
+<span class="text-on-surface-variant">...</span>
+</div>
+</div>
+</div>
+<!-- Quick Feedback & Practice Mode Link -->
+<div class="flex items-center justify-between px-space-xs py-space-sm text-on-surface-variant">
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+<span>Report sign inaccuracies</span>
+</button>
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span>Practice with Camera</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (() => {
+    // DOM Element References
+    const phraseInput = document.getElementById('phrase-input');
+    const charCounter = document.getElementById('char-counter');
+    const clearBtn = document.getElementById('clear-btn');
+    const voiceBtn = document.getElementById('voice-btn');
+    const micIcon = document.getElementById('mic-icon');
+    const presetChips = document.querySelectorAll('.preset-chip');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+    const playIcon = document.getElementById('play-icon');
+    const replayBtn = document.getElementById('replay-btn');
+    const progressBar = document.getElementById('progress-bar');
+    const progressContainer = document.getElementById('progress-container');
+    const speedButtons = document.querySelectorAll('.speed-btn');
+    const speedIndicator = document.getElementById('speed-indicator');
+    const angleFront = document.getElementById('angle-front');
+    const angleSide = document.getElementById('angle-side');
+    const angleIndicator = document.getElementById('angle-indicator');
+    const langEn = document.getElementById('lang-en');
+    const langHi = document.getElementById('lang-hi');
+    const handIndicator = document.getElementById('hand-indicator');
+    const translateBtn = document.getElementById('translate-btn');
+
+    let isPlaying = true;
+    let isListening = false;
+    let currentSpeed = 1.0;
+    let animInterval = null;
+    let progressPercent = 65;
+
+    // Character Counter
+    function updateCounter() {
+      const len = phraseInput.value.length;
+      charCounter.textContent = `${len} / 120 chars`;
+    }
+    phraseInput.addEventListener('input', updateCounter);
+
+    // Clear Button
+    clearBtn.addEventListener('click', () => {
+      phraseInput.value = '';
+      updateCounter();
+      phraseInput.focus();
+    });
+
+    // Preset Chip Selection
+    presetChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        phraseInput.value = chip.dataset.phrase || chip.textContent.trim();
+        updateCounter();
+        presetChips.forEach(c => {
+          c.classList.remove('bg-surface-container-high', 'text-primary');
+          c.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        chip.classList.remove('bg-surface-container', 'text-on-surface');
+        chip.classList.add('bg-surface-container-high', 'text-primary');
+        triggerTranslateFeedback();
+      });
+    });
+
+    // Voice Dictation Simulation
+    voiceBtn.addEventListener('click', () => {
+      isListening = !isListening;
+      if (isListening) {
+        voiceBtn.classList.remove('bg-surface-container-high', 'text-primary');
+        voiceBtn.classList.add('bg-error', 'text-on-error', 'animate-pulse');
+        micIcon.textContent = 'settings_voice';
+        setTimeout(() => {
+          phraseInput.value = "Where is the emergency ward?";
+          updateCounter();
+          voiceBtn.classList.remove('bg-error', 'text-on-error', 'animate-pulse');
+          voiceBtn.classList.add('bg-surface-container-high', 'text-primary');
+          micIcon.textContent = 'mic';
+          isListening = false;
+        }, 2500);
+      } else {
+        voiceBtn.classList.remove('bg-error', 'text-on-error', 'animate-pulse');
+        voiceBtn.classList.add('bg-surface-container-high', 'text-primary');
+        micIcon.textContent = 'mic';
+      }
+    });
+
+    // Language Toggle
+    langEn.addEventListener('click', () => {
+      langEn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      langEn.classList.remove('text-on-surface-variant');
+      langHi.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      langHi.classList.add('text-on-surface-variant');
+      phraseInput.placeholder = "Type a sentence or common greeting (e.g. 'Where is the pharmacy?')";
+    });
+
+    langHi.addEventListener('click', () => {
+      langHi.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      langHi.classList.remove('text-on-surface-variant');
+      langEn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      langEn.classList.add('text-on-surface-variant');
+      phraseInput.placeholder = "एक वाक्य या अभिवादन टाइप करें (जैसे 'दवाखाना कहाँ है?')";
+    });
+
+    // Playback Progress Loop Simulation
+    function startProgressLoop() {
+      if (animInterval) clearInterval(animInterval);
+      animInterval = setInterval(() => {
+        if (!isPlaying) return;
+        progressPercent = (progressPercent + (1 * currentSpeed)) % 100;
+        progressBar.style.width = progressPercent + '%';
+        
+        if (progressPercent < 35) {
+          handIndicator.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">medication</span><span>Signing: [PHARMACY]</span>';
+        } else if (progressPercent < 70) {
+          handIndicator.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">location_on</span><span>Signing: [WHERE]</span>';
+        } else {
+          handIndicator.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">contact_support</span><span>Signing: [QUESTION]</span>';
+        }
+      }, 50);
+    }
+    startProgressLoop();
+
+    // Play/Pause Action
+    playPauseBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      playIcon.textContent = isPlaying ? 'pause' : 'play_arrow';
+      playPauseBtn.setAttribute('aria-label', isPlaying ? 'Pause animation' : 'Play animation');
+    });
+
+    // Replay Action
+    replayBtn.addEventListener('click', () => {
+      progressPercent = 0;
+      progressBar.style.width = '0%';
+      isPlaying = true;
+      playIcon.textContent = 'pause';
+    });
+
+    // Seek Click on Progress Bar
+    progressContainer.addEventListener('click', (e) => {
+      const rect = progressContainer.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      progressPercent = Math.max(0, Math.min(100, (clickX / rect.width) * 100));
+      progressBar.style.width = progressPercent + '%';
+    });
+
+    // Speed Controls
+    speedButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        speedButtons.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+          b.classList.add('text-surface-variant');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+        btn.classList.remove('text-surface-variant');
+        currentSpeed = parseFloat(btn.dataset.speed);
+        speedIndicator.textContent = `${currentSpeed}x Speed`;
+      });
+    });
+
+    // Angle Toggles
+    angleFront.addEventListener('click', () => {
+      angleFront.classList.add('bg-secondary', 'text-on-secondary');
+      angleFront.classList.remove('text-surface-variant');
+      angleSide.classList.remove('bg-secondary', 'text-on-secondary');
+      angleSide.classList.add('text-surface-variant');
+      angleIndicator.textContent = "Front View (0°)";
+    });
+
+    angleSide.addEventListener('click', () => {
+      angleSide.classList.add('bg-secondary', 'text-on-secondary');
+      angleSide.classList.remove('text-surface-variant');
+      angleFront.classList.remove('bg-secondary', 'text-on-secondary');
+      angleFront.classList.add('text-surface-variant');
+      angleIndicator.textContent = "Side View (45° Handshape Depth)";
+    });
+
+    // Translate Button Click Feedback
+    function triggerTranslateFeedback() {
+      const originalText = translateBtn.innerHTML;
+      translateBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">sync</span><span>Translating grammar...</span>';
+      setTimeout(() => {
+        translateBtn.innerHTML = originalText;
+        progressPercent = 0;
+        isPlaying = true;
+        playIcon.textContent = 'pause';
+      }, 600);
+    }
+    translateBtn.addEventListener('click', triggerTranslateFeedback);
+
+    // Initial counter setup
+    updateCounter();
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-stretch justify-around h-16 px-space-xs"><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md text-label-md mt-0.5">Home</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg text-primary font-bold" data-path="translate" href="#"><span class="material-symbols-outlined text-[24px]">videocam</span><span class="font-label-md text-label-md mt-0.5">Translate</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="learn" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-md text-label-md mt-0.5">Learn</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 my-1 px-1 bg-error-container text-on-error-container rounded-xl active:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-error" data-path="emergency" href="#"><span class="material-symbols-outlined text-[22px]">emergency</span><span class="font-label-md text-label-md mt-0.5 font-bold">SOS</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[48px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-lg" data-path="more" href="#"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-md text-label-md mt-0.5">More</span></a></div></nav></body></html>
